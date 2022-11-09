@@ -1,0 +1,1 @@
+Fixed point calculation implementation in rust, mostly just to familiarize myself with the language.
