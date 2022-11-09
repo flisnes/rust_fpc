@@ -12,6 +12,7 @@ fn main() {
     println!("Conversion error: {}", pi-pi_from_q);
 
     println!("q_add: {} -> as float: {}", q_add(pi_q16_16, sqrttwo_q16_16), fixed_to_float(q_add(pi_q16_16, sqrttwo_q16_16), 16));
+    println!("q_sub: {} -> as float: {}", q_sub(pi_q16_16, sqrttwo_q16_16), fixed_to_float(q_sub(pi_q16_16, sqrttwo_q16_16), 16));
 
 }
 
@@ -51,4 +52,8 @@ fn q_add(a: i32, b: i32) -> i32 {
 
     result = tmp as i32;
     return result;
+}
+
+fn q_sub(a: i32, b: i32) -> i32 {
+    return a - b;
 }
